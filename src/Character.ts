@@ -1,6 +1,6 @@
 import Archetype, { Mage } from './Archetypes';
 import Energy from './Energy';
-import Fighter from './Fighter';
+import { Fighter } from './Fighter';
 import Race, { Elf } from './Races';
 import getRandomInt from './utils';
 
@@ -22,7 +22,7 @@ export default class Character implements Fighter {
     this._maxLifePoints = this._race.maxLifePoints / 2;
     this._lifePoints = this._race.maxLifePoints;
     this._energy = {
-      type_: 'mana',
+      type_: this.energy.type_,
       amount: getRandomInt(1, 10),
     };
   }
