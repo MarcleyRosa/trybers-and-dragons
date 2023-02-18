@@ -27,7 +27,7 @@ export default class Character implements Fighter {
     };
   }
 
-  attack(enemy: Fighter | SimpleFighter): void {
+  attack(enemy: SimpleFighter): void {
     const attck = this._strength;
     enemy.receiveDamage(attck);
   }
