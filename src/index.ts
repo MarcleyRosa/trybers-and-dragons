@@ -7,7 +7,7 @@ const player1 = new Character('player1');
 const player2 = new Character('player2');
 const player3 = new Character('player3');
 
-for (let index = 0; index <= 15; index += 1) {
+for (let index = 0; index <= 10; index += 1) {
   player1.levelUp();
 }
 
