@@ -7,14 +7,9 @@ const player1 = new Character('Arthorius');
 const player2 = new Character('Reward');
 const player3 = new Character('Konsumerat');
 
-// for (let index = 0; index <= 10; index += 1) {
-//   player1.levelUp();
-// }
-player1.levelUp();
-player1.levelUp();
-player1.levelUp();
-player1.levelUp();
-player1.levelUp();
+for (let index = 0; index <= 10; index += 1) {
+  player1.levelUp();
+}
 
 const monster1 = new Monster();
 const monster2 = new Dragon();
